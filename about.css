@@ -16,10 +16,25 @@ body {
     background-color: rgba(10, 10, 10, 0.95) !important;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    height: 80px;
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+    transform: none;
+}
+
+.nav-link {
     color: var(--text) !important;
+    font-size: 20px;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
@@ -34,6 +49,16 @@ body {
     padding: 2rem;
     margin: 2rem 0;
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mission-section, .team-section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.mission-section h3, .team-section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 hgroup {
@@ -111,7 +136,7 @@ figcaption a:hover {
 .form-control:focus {
     background-color: rgba(255, 255, 255, 0.15);
     border-color: var(--accent);
-    box-shadow: 0 0 0 0.2rem rgba(138, 43, 226, 0.25);
+    box-shadow: 0 0 0 0.2rem #ff85d4a2;
     color: var(--text);
 }
 
@@ -126,7 +151,7 @@ figcaption a:hover {
 .btn-primary:hover {
     background-color: #9d3cf7;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+    box-shadow: 0 5px 15px #ff85d4a2;
 }
 
 footer {
